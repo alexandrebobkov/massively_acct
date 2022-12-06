@@ -19,9 +19,9 @@
 
         {{! Get all tags and order them by post count }}
     
-        {{#get "posts" limit="all" filter="about"}}
+        {{#get "posts" limit="all"}}
             {{#foreach posts}}
-                <h2>{{title}}</h2>
+                <h3>{{title}}</h3>
             {{/foreach}}
         {{/get}}
       
