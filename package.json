@@ -88,6 +88,10 @@
             "office_phone": {
                 "type": "text",
                 "default": "(343) 202 - 2043"
+            },
+            "office_address": {
+                "type": "text",
+                "default": "M060 - 1554 Carling Ave, Ottawa (ON)  K1Z 7M4"
             }
         }
     }
