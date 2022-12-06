@@ -17,6 +17,13 @@
             {{content}}
         </div>
 
+        {{! Get all tags and order them by post count }}
+        {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+            {{#foreach tags}}
+                <p>{{name}} ({{count.posts}})</p>
+            {{/foreach}}
+        {{/get}}
+
     </section>
 </main>
 
