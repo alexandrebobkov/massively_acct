@@ -8,8 +8,9 @@ into the {body} of the default.hbs template --}}
 
     {{!-- Featured Post --}}
     {{#is "home"}}
-    {{#get "posts" filter="featured:true" limit="1" as |featured_post|}}
-        {{#foreach featured_post}}
+    {{!-- #get "posts" filter="featured:true" limit="1" as |featured_post| --}}
+    {{#get "tags" filter="home" limit="1" }}
+        {{!--#foreach featured_post--}}
             <article class="post featured">
                 <header class="major">
                     <span class="date">{{date format="MMM D, YYYY"}}</span>
@@ -23,7 +24,7 @@ into the {body} of the default.hbs template --}}
                     <li><a href="{{url}}" class="button large">Full Story</a></li>
                 </ul>
             </article>
-        {{/foreach}}
+        {{!--/foreach--}}
     {{/get}}
     {{/is}}
 
