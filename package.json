@@ -80,6 +80,14 @@
                     "Elegant serif"
                 ],
                 "default": "Elegant serif"
+            },
+            "website_name": {
+                "type": "text",
+                "default": "Alexandre Specialized Accounting Services"
+            },
+            "office_phone": {
+                "type": "text",
+                "default": "(343) 202 - 2043"
             }
         }
     }
