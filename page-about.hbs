@@ -18,13 +18,13 @@
         </div>
 
         {{! Get all tags and order them by post count }}
-        {{#post}}
+    
         {{#get "posts" limit="all" filter="slug:about"}}
             {{#foreach posts}}
                 <h2>{{title}}</h2>
             {{/foreach}}
         {{/get}}
-        {{/post}}
+      
 
     </section>
 </main>
