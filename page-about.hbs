@@ -18,9 +18,9 @@
         </div>
 
         {{! Get all tags and order them by post count }}
-        {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
-            {{#foreach tags}}
-                <p>{{name}} ({{count.posts}})</p>
+        {{#get "posts" limit="all" filter="primary_tag:{{primary_tag.about}}"}}
+            {{#foreach posts}}
+                <h2>{{title}})</h2>
             {{/foreach}}
         {{/get}}
 
