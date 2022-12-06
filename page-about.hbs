@@ -21,7 +21,9 @@
     
         {{#get "posts" limit="all"}}
             {{#foreach posts}}
-                <h3>{{title}}</h3>
+                {{#has tag="about"}}
+                    <h3>{{title}}</h3>
+                {{/has}}
             {{/foreach}}
         {{/get}}
       
