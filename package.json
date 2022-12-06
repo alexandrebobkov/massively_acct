@@ -1,8 +1,8 @@
 {
-    "name": "massively",
-    "description": "This is Massively, a text-heavy, article-oriented theme for Ghost.",
+    "name": "activcount-massively",
+    "description": "This is customized Massively theme, a text-heavy, article-oriented theme for Ghost.",
     "demo": "https://massively.ghost.io",
-    "version": "1.1.0",
+    "version": "22.12.0",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
@@ -21,21 +21,23 @@
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Alexandre Bobkov",
+        "email": "abobk012@uottawa.ca",
+        "url": "https://activcount.ca"
     },
     "gpm": {
         "type": "theme",
         "categories": [
             "Minimal",
-            "Magazine"
+            "Magazine",
+            "Business"
         ]
     },
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "business"
     ],
     "repository": {
         "type": "git",
