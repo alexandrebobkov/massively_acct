@@ -19,7 +19,7 @@
 
         {{! Get all tags and order them by post count }}
     
-        {{#get "posts" limit="all" filter="tag:+about"}}
+        {{#get "posts" limit="all" tag=[about]}}
             {{#foreach posts}}
                 <h2>{{title}}</h2>
             {{/foreach}}
