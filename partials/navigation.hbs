@@ -11,11 +11,10 @@
         {{#if @custom.url_Facebook}}
         <li><a href="{{@custom.url_Facebook}}" target="_blank" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a></li>
         {{/if}}
-        {{#if @site.twitter}}
-        <li><a href="{{twitter_url @site.twitter}}" target="_blank" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
+        {{#if @custom.url_qbo}}
+        <li><a href="{{@custom.url_qbo}}" target="_blank" class="fa-sharp fa-solid fa-briefcase" title="QBO"><span class="label">QBO</span></a></li>
         {{/if}}
-
     </ul>
 </nav>
 
-{{!-- @custom.website_name --}}
+{{!-- @custom.website_name -- <i class="fa-sharp fa-solid fa-briefcase"></i>--}}
