@@ -101,7 +101,7 @@
                 "type": "text",
                 "default": "https://www.facebook.com/activcount/"
             },
-            "qbo": {
+            "url_qbo": {
                 "type": "text",
                 "default": "https://proadvisor.intuit.com/app/accountant/search?searchId=alexandre-bobkov"
             },
