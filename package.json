@@ -87,7 +87,7 @@
             },
             "office_phone": {
                 "type": "text",
-                "default": "(343) 202 - 2043"
+                "default": "+1 (343) 202 - 2043"
             },
             "office_address": {
                 "type": "text",
@@ -99,11 +99,11 @@
             },
             "url_Facebook": {
                 "type": "text",
-                "default": ""
+                "default": "https://www.facebook.com/activcount/"
             },
             "url_LinkedIn": {
                 "type": "text",
-                "default": ""
+                "default": "https://www.linkedin.com/company/5069161"
             }
         }
     }
