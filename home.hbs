@@ -4,19 +4,17 @@
 
 {{!-- Main --}}
 <main id="main">
-
     {{!-- Featured Post --}}
     {{#is "home"}}
-    <header class="major">
-        <h1>Welcome to our new website!</h1>
-        <p>Our website is getting fresh re-design.</p>
-    </header>
+        {{#get "posts" limit="all" filter="tags:home_2022"}}
+            {{#foreach posts}}
+                <header class="major">
+                     <h1>{{title}}</h1>
+               </header>
+               <div class="content">
+                    {{content}}
+               </div>
+            {{/foreach}}
+        {{/get}}
     {{/is}}
-
-    {{#get "posts" limit="all" filter="tags:home_2022"}}
-    {{#foreach posts}}
-    <h3>{{title}}</h3>
-    {{/foreach}}
-    {{/get}}
-
 </main>
