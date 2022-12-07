@@ -22,9 +22,9 @@
         </div>
 
         {{#get "posts" limit="all" filter="tags:qbo_tips"}}
-        {{#foreach posts}}
-            <h3>{{title}}</h3>
+        {{#foreach posts}}            
             <div class="content">
+                <h3>{{title}}</h3>
                 {{content}}
             </div>
         {{/foreach}}
