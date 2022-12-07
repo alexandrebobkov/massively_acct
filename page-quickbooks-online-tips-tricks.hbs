@@ -25,7 +25,9 @@
         {{#foreach posts}}            
             <div class="content">
                 <h3>{{title}}</h3>
-                {{content}}
+                <figure class="image main">
+                    <img src="{{img_url feature_image}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" />
+                </figure>
             </div>
         {{/foreach}}
         {{/get}}
