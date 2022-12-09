@@ -2,13 +2,10 @@
 {{!-- The tag above means: insert everything in this file
 {{!-- Home page template into the {body} of the default.hbs template --}}
 
-{{#post}}
 {{!-- Main --}}
 <main id="main">
     <section class="post">
-        <div class="content">
-            {{content}}
-        </div>
+        
         {{!-- Featured Post --}}
         {{#is "home"}}
 
@@ -25,4 +22,3 @@
         {{/is}}
     </section>
 </main>
-{{/post}}
