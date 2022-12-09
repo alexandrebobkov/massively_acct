@@ -1,4 +1,14 @@
 routes:
-  //:
-  controller: channel
-  order: published_at asc
+
+collections:
+  /qbo-tips/:
+    permalink: /qbo-tips/{slug}/
+    template: index
+    filter: tag:qbo_tips
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
