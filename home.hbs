@@ -7,6 +7,9 @@
     <section class="post">
         {{!-- Featured Post --}}
         {{#is "home"}}
+        <div class="content">
+            {{content}}
+        </div>
         {{#get "posts" limit="all" filter="tags:home_2022"}}
         {{#foreach posts}}
         <header class="major">
