@@ -16,16 +16,6 @@
         <div class="content">
             {{content}}
         </div>
-
-        {{! Get all tags and order them by post count }}
-    
-        {{#get "posts" limit="all" filter="tags:about"}}
-            {{#foreach posts}}
-                    <h3>{{title}}</h3>
-            {{/foreach}}
-        {{/get}}
-      
-
     </section>
 </main>
 
