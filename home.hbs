@@ -5,21 +5,22 @@
 {{!-- Main --}}
 <main id="main">
     <section class="post">
+        <div class="content">
+            {{content}}
+        </div>
+
         {{!-- Featured Post --}}
         {{#is "home"}}
-        <div class="content">
-            {{content}}
-        </div>
-        {{#get "posts" limit="all" filter="tags:home_2022"}}
-        {{#foreach posts}}
-        <header class="major">
-            <h1>{{title}}</h1>
-        </header>
-        <div class="content">
-            {{content}}
-        </div>
-        {{/foreach}}
-        {{/get}}
+            {{#get "posts" limit="all" filter="tags:home_2022"}}
+                {{#foreach posts}}
+                    <header class="major">
+                        <h1>{{title}}</h1>
+                    </header>
+                    <div class="content">
+                        {{content}}
+                    </div>
+                {{/foreach}}
+            {{/get}}
         {{/is}}
     </section>
 </main>
