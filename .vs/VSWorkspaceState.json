@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
     "\\assets",
     "\\assets\\main",
     "\\assets\\main\\css",
     "\\assets\\main\\js",
-    "\\partials"
+    "\\assets\\main\\sass"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\assets\\main\\css\\main.css",
   "PreviewInSolutionExplorer": false
 }

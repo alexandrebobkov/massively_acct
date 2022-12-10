@@ -1,10 +1,18 @@
 routes:
 
+/ceo/:
+  controller: channel
+  filter: tag:[business,qbo_tips]
+
 collections:
   /qbo-tips/:
     permalink: /qbo-tips/{slug}/
     template: index
-    filter: tag:qbo_tips
+    filter: primary_tag:qbo_tips
+  /business/:
+    permalink: /business/{slug}/
+    template: index
+    filter: primary_tag:business
   /:
     permalink: /{slug}/
     template: index
